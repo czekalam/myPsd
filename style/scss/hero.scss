@@ -1,0 +1,41 @@
+body {
+  .hero {
+      align-items: center;
+      background-attachment: fixed;
+      background-blend-mode: color;
+      background-color: rgba(0,0,0,0.5);
+      background-image: url('../img/hero/1.jpg');
+      color: #fff;
+      display: flex;
+      height: 88vh;
+      justify-content: center;
+      .center {
+          text-align: center;
+          .baner {
+              font-size: 40px;
+              font-weight: bold;
+              margin-bottom: 50px;
+          }
+          button {
+              background-color: #f2b705;
+              border: 1px solid #f2b705;
+              border-radius: 15px;
+              color: #fff;
+              font-size: 22px;
+              padding: 15px 50px;
+          }
+      }
+  }
+}
+@media (max-width:991.98px) {
+  body {
+      .hero {
+          .center {
+              button {
+                  font-size: 30px;
+                  padding: 25px 70px;
+              }
+          }
+      }
+  }
+}

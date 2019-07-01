@@ -1,0 +1,66 @@
+@import 'header.scss';
+@import 'hero.scss';
+@import 'why-we.scss';
+@import 'projects.scss';
+@import 'clients.scss';
+@import 'team.scss';
+@import 'footer.scss';
+body {
+    color: #555;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 15px;
+    overflow-x: hidden;
+    p {
+        line-height: 20px;
+    }
+    .container {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    h2 {
+        color: #f2b705;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    section {
+        box-sizing: border-box;
+        padding: 70px 0 100px 0;
+    }
+    hr {
+        background: #f2b705;
+        border: none;
+        display: block;
+        height: 120px;
+        overflow: visible;
+        position: relative;
+        transform: rotate(-1deg);
+        width: 100%;
+        &::after {
+            background-color: #fff;
+            content: '';
+            display: block;
+            height: 100px;
+            left: -1px;
+            position: absolute;
+            top: 70%;
+            transform: rotate(2deg);
+            width: 100%;
+        }
+        &:nth-of-type(2) {
+            transform: rotate(1deg);
+            &::after {
+                left: 2px;
+                transform: rotate(-2deg);
+            }
+        }
+    }
+}
+@media (max-width:1300px) {
+    body {
+        .container {
+            padding: 0 50px;
+        }
+    }
+}
