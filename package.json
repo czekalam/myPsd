@@ -1,0 +1,17 @@
+{
+  "name": "my-psd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch style/scss/style.scss style/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "sass-convert": "^0.5.2",
+    "scssfmt": "^1.0.7"
+  }
+}
